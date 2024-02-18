@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+	<title>DevIT Romniuk Vadym Task</title>
+{% endblock %}
+
+
+
+{% block body %}
+
+<section class="index">
+	<div class="main-content">
+		<div class="form-container">
+			<div class="title-form">
+				<h3>Click and wait..</h3>
+			</div>
+			<div class="main-form">
+				<form action="">
+					<div class="input-value">
+						<input 
+							name="concurrencyInput"
+							id="concurrencyInput"
+							type="number" 
+							min="0"
+							max="100"
+							required
+						>
+						<label for="concurrencyInput">Concurrency Input</label>
+					</div>
+					<div class="input-value">
+						<input 
+							name="requestsPerSecondInput"
+							id="requestsPerSecondInput"
+							type="number" 
+							min="0"
+							max="100"
+							required
+						>
+						<label for="requestsPerSecondInput">Per Second Input</label>
+					</div>
+					<div class="submit-value">
+						<button class="btn-sub" id="submitButton" type="submit">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="result">
+		<div class="title-res">
+			<h3>Result response</h3>
+		</div>
+		<div class="container-res">
+			<ul class="resultContainer" id="resultContainer">
+
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+{% endblock %}
