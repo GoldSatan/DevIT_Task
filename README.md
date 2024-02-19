@@ -70,6 +70,33 @@ After this steps request to server start!
 
 ![image](https://github.com/GoldSatan/DevIT_Task/assets/73445130/b3a83cc9-805e-4da7-8263-9664879635ea)
 
+> [!WARNING]
+> If you enter a number of requests greater than 50 (51 to 100), nothing will be logged because the backend will return a 429 error.
+> You can see it in the developer console:
+
+![image](https://github.com/GoldSatan/DevIT_Task/assets/73445130/3709d16d-9359-4a40-a443-4b9cb15afd6a)
+
+
+**This is achieved using a view on the server side:**
+
+    def POSTrequestsView(request):
+        if request.method == 'POST':
+            body = json.loads(request.body) 
+            requestsPerSecond = int(body['requestsPerSecond'])
+            
+            response_delay = random.randint(1, 1000) 
+            time.sleep(response_delay / 1000)  
+            
+            response_data = {'index': body['index']}
+            
+            if requestsPerSecond > 50:
+                return JsonResponse({'error': 'Too many requests per second'}, status=429)
+                
+            return JsonResponse(response_data)
+        else:
+            return JsonResponse({'error': 'Only POST requests are allowed'})
+
+
 
 <h3 align="left">Connect with me:</h3>
 telegram: @vadimromaniukhere
