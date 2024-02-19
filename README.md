@@ -14,9 +14,65 @@
 
 You can choose any technology stack that you will use to implement the logic.
 
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+
+> [!IMPORTANT]
+> For correct operation, you must download certain libraries and frameworks!
+
+In working dir download Django:
+
+`py -m pip install Django`
+
+Install Flask:
+
+`py -m pip install Flask`
+
+Additional you need to install 'Access-Control-Allow-Origin' lib for Flask and Django:
+
+For Django:
+
+`pip install django-cors-headers`
+
+For Flask:
+
+`pip install flask-cors`
+
+# Start 
+
+First you have to start the backend part, and then start the Frontend. Since Django performs the back part, you need to start from it:
+
+ - Start Django (Backend). Open cmd or other console. Open working dir and run server:
+
+   - `cd /Backend`
+   - `python manage.py runserver`
+
+ - Start Flask (Frontend). Open cmd or other console. Open working dir and run client:
+
+   - `cd /Frontend`
+   - `python app.py` 
+
+> [!WARNING]
+> Django starts on localhost on port 8000 and Flask starts on all available hosts and port 8080.</br>
+> If these ports are already taken, the applications will not run!
+
+# Preview
+
+After start backend and frontand open **http://127.0.0.1:8080**: 
+
+![image](https://github.com/GoldSatan/DevIT_Task/assets/73445130/3f5dcdd7-86b3-45b2-ae85-b5ddf124b417)
+
+Input two required fields and click submit:
+
+![image](https://github.com/GoldSatan/DevIT_Task/assets/73445130/ca706851-0157-4050-a7ce-a3d2f88553b8)
+
+After this steps request to server start!
+
+![image](https://github.com/GoldSatan/DevIT_Task/assets/73445130/b3a83cc9-805e-4da7-8263-9664879635ea)
+
+
 <h3 align="left">Connect with me:</h3>
 telegram: @vadimromaniukhere
 gmail: vadim.romaniuk.here@gmail.com
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+
