@@ -1,4 +1,4 @@
-# DevIT Task
+# Data fetch logic
 
 <h3 align="left">Implement client-server data fetch logic by following the next steps:</h3>
 
